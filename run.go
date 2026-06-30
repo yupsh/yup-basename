@@ -75,7 +75,11 @@ func newCommand(version string, stdout io.Writer) *cli.Command {
 		// os.Exit, so the exit code stays testable.
 		ExitErrHandler: func(context.Context, *cli.Command, error) {},
 		Flags: []cli.Flag{
-			&cli.BoolFlag{Name: flagMultiple, Aliases: []string{"a"}, Usage: "support multiple NAME arguments, treating each as a NAME"},
+			&cli.BoolFlag{
+				Name:    flagMultiple,
+				Aliases: []string{"a"},
+				Usage:   "support multiple NAME arguments, treating each as a NAME",
+			},
 			&cli.StringFlag{Name: flagSuffix, Aliases: []string{"s"}, Usage: "remove a trailing SUFFIX; implies -a"},
 			&cli.BoolFlag{Name: flagZero, Aliases: []string{"z"}, Usage: "end each output line with NUL, not newline"},
 		},
