@@ -1,23 +1,9 @@
-# yup-basename
+[![actions](https://github.com/yupsh/yup-basename/actions/workflows/actions.yml/badge.svg)](https://github.com/yupsh/yup-basename/actions/workflows/actions.yml)
+[![ci](https://github.com/yupsh/yup-basename/actions/workflows/ci.yml/badge.svg)](https://github.com/yupsh/yup-basename/actions/workflows/ci.yml)
+[![dockerfiles](https://github.com/yupsh/yup-basename/actions/workflows/dockerfiles.yml/badge.svg)](https://github.com/yupsh/yup-basename/actions/workflows/dockerfiles.yml)
+[![docs](https://github.com/yupsh/yup-basename/actions/workflows/docs.yml/badge.svg)](https://github.com/yupsh/yup-basename/actions/workflows/docs.yml)
+[![go](https://github.com/yupsh/yup-basename/actions/workflows/go.yml/badge.svg)](https://github.com/yupsh/yup-basename/actions/workflows/go.yml)
+[![release](https://github.com/yupsh/yup-basename/actions/workflows/release.yml/badge.svg)](https://github.com/yupsh/yup-basename/actions/workflows/release.yml)
+[![shell](https://github.com/yupsh/yup-basename/actions/workflows/shell.yml/badge.svg)](https://github.com/yupsh/yup-basename/actions/workflows/shell.yml)
 
-```
-NAME:
-   basename - strip directory and suffix from filenames
-
-USAGE:
-   basename NAME [SUFFIX]
-   basename OPTION... NAME...
-
-   Print NAME with any leading directory components removed.
-   If specified, also remove a trailing SUFFIX.
-
-VERSION:
-   dev
-
-GLOBAL OPTIONS:
-   --multiple, -a              support multiple NAME arguments, treating each as a NAME
-   --suffix string, -s string  remove a trailing SUFFIX; implies -a
-   --zero, -z                  end each output line with NUL, not newline
-   --help, -h                  show help
-   --version                   print version information and exit
-```
+[docs](https://yupsh.github.io/docs.repl/)
