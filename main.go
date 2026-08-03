@@ -62,8 +62,15 @@ func flags() []urf.Flag {
 			Name:    flagMultiple,
 			Aliases: []string{"a"},
 			Usage:   "support multiple NAME arguments, treating each as a NAME",
+			Sources: urf.EnvVars("YUP_BASENAME_MULTIPLE"),
 		},
-		&urf.StringFlag{Name: flagSuffix, Aliases: []string{"s"}, Usage: "remove a trailing SUFFIX; implies -a"},
+		&urf.StringFlag{
+			Name:    flagSuffix,
+			Aliases: []string{"s"},
+			Usage:   "remove a trailing SUFFIX; implies -a",
+			Value:   "",
+			Sources: urf.EnvVars("YUP_BASENAME_SUFFIX"),
+		},
 	}
 }
 
